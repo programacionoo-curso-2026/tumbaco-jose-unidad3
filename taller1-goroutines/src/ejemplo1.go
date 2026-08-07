@@ -7,5 +7,5 @@ func ShowGoroutine(id int) {
 }
 
 func main() {
-	ShowGoroutine(1)
+	go ShowGoroutine(1)
 }
