@@ -10,7 +10,9 @@ func ShowGoroutine(id int) {
 }
 
 func main() {
-	go ShowGoroutine(1)
+	for i := 0; i < 10; i++ {
+		go ShowGoroutine(i)
+	}
 
 	time.Sleep(1 * time.Second)
 }
