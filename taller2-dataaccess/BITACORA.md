@@ -298,3 +298,37 @@ El proyecto terminó con una estructura separada entre modelo y acceso a datos.
 
 La aplicación permite gestionar videojuegos mediante SQLite y las operaciones principales de persistencia fueron comprobadas durante el desarrollo.
 
+---
+
+## Fase 10 - Prueba final de las operaciones
+
+Se realizó una ejecución final del programa después de corregir el manejo del identificador generado por SQLite.
+
+La ejecución permitió comprobar:
+
+- Conexión con SQLite.
+- Creación de la tabla.
+- Inserción de un videojuego.
+- Obtención del ID generado.
+- Consulta del videojuego mediante su ID.
+- Consulta de todos los videojuegos.
+- Actualización del precio.
+- Consulta del registro actualizado.
+- Eliminación del videojuego.
+
+Resultado obtenido:
+
+```text
+Conexión a SQLite realizada correctamente.
+Tabla videojuegos creada correctamente.
+Videojuego creado correctamente con ID: 5
+Videojuego encontrado: &{ID:5 Nombre:Minecraft Genero:Sandbox Plataforma:PC Precio:29.99}
+
+Lista de videojuegos:
+ID: 2 | Nombre: Minecraft | Género: Sandbox | Plataforma: PC | Precio: 29.99
+ID: 3 | Nombre: Minecraft | Género: Sandbox | Plataforma: PC | Precio: 29.99
+ID: 4 | Nombre: Minecraft | Género: Sandbox | Plataforma: PC | Precio: 29.99
+
+Precio actualizado correctamente.
+Videojuego actualizado: &{ID:5 Nombre:Minecraft Genero:Sandbox Plataforma:PC Precio:39.99}
+Videojuego eliminado correctamente.
